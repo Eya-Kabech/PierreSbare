@@ -3,7 +3,7 @@ package personnages;
 public class Humain {
 	private String nom;
 	private String boissonFav;
-	private int quantiteArgent ;
+	protected int quantiteArgent ;
 	
 	
 	
@@ -20,7 +20,7 @@ public class Humain {
 	public int getQuantiteArgent() {
 		return quantiteArgent;
 	}
-	private void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println(texte);
 	}
 	public void direBonjour() {
@@ -37,11 +37,11 @@ public class Humain {
 			parler("Je n'ai que "+quantiteArgent+" sous en poche. Je ne peux même pas m'offrir "+bien+" à "+prix+" sous");
 		}
 	}
-	private void gagnerArgent(int gain) {
-		
+	protected void gagnerArgent(int gain) {
+		quantiteArgent+=gain;
 	}
-	private void perdreArgent(int perte) {
-		
+	protected void perdreArgent(int perte) {
+		quantiteArgent-=perte;
 	}
 	
 	
