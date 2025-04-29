@@ -28,6 +28,8 @@ public class HistoireTP4 {
 		yaku.extroquer(Marco);
 		Ronin roro = new Ronin("roro", "shochu", 60);
 		roro.donner(Marco);
+		System.out.println("-----------------------");
+		roro.provoquer(yaku);
 	
 
 	}
