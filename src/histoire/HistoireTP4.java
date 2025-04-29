@@ -28,7 +28,7 @@ public class HistoireTP4 {
 		Ronin roro = new Ronin("roro", "shochu", 60);
 		roro.donner(Marco);
 		roro.provoquer(yaku);
-		System.out.println("-----------------------------------------------------");
+		
 		Commercant marco = new Commercant("Marco", 20);
 		Commercant chonin = new Commercant("Chonin", 40);
 		Commercant kumi = new Commercant("Kumi", 10);
@@ -39,6 +39,8 @@ public class HistoireTP4 {
 		marco.listerConnaissance();
 		yaku.listerConnaissance();
 		roro.listerConnaissance();
+		System.out.println("-----------------------------------------------------");
+	
 	}
 	
 

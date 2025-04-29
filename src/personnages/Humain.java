@@ -1,6 +1,6 @@
 package personnages;
 
-import java.security.PublicKey;
+
 
 public class Humain {
 	private String nom;
